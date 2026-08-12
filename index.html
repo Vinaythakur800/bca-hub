@@ -752,11 +752,10 @@ onclick="toggle('communication')">
 📘 Unit 1 — Communication Basics
 </div>
 
-<button onclick="viewNote(event,'Communication Unit 1')">
+<button onclick="viewNote(event,'BCA_Business_Communication_Complete_Color_Notes.pdf')">
 👁 View
 </button>
-
-<button onclick="downloadNote(event)">
+<button onclick="downloadNote(event,'BCA_Business_Communication_Complete_Color_Notes.pdf')">
 ⬇ Download
 </button>
 
@@ -768,11 +767,10 @@ onclick="toggle('communication')">
 📘 Unit 2 — Professional Communication
 </div>
 
-<button onclick="viewNote(event,'Communication Unit 2')">
+<button onclick="viewNote(event,'BCA_Business_Communication_Complete_Color_Notes.pdf')">
 👁 View
 </button>
-
-<button onclick="downloadNote(event)">
+<button onclick="downloadNote(event,'BCA_Business_Communication_Complete_Color_Notes.pdf')">
 ⬇ Download
 </button>
 
@@ -1549,33 +1547,29 @@ toast.classList.remove("show");
 }
 
 
-function viewNote(event,name){
+function viewNote(event, file){
 
     event.stopPropagation();
 
-    window.open(
-        "BCA_C_Programming_Complete_Color_Notes.pdf",
-        "_blank"
-    );
+    window.open(file, "_blank");
 
 }
 
-function downloadNote(event){
+function downloadNote(event, file){
 
     event.stopPropagation();
 
     const link = document.createElement("a");
 
-    link.href = "BCA_C_Programming_Complete_Color_Notes.pdf";
+    link.href = file;
 
-    link.download = "BCA_C_Programming_Complete_Color_Notes.pdf";
+    link.download = file;
 
     document.body.appendChild(link);
 
     link.click();
 
     document.body.removeChild(link);
-
 }
 function searchNotes(){
 
