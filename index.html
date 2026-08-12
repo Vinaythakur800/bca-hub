@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>BCA HUB — Student Notes & Resources</title>
+<title>BCA HUB | Student Notes</title>
 
 <style>
 *{
@@ -14,327 +13,238 @@
     scroll-behavior:smooth;
 }
 
-:root{
-    --bg:#080b16;
-    --card:#111629;
-    --card2:#151b32;
-    --text:#f7f8ff;
-    --muted:#a9b0c8;
-    --primary:#8b5cf6;
-    --secondary:#22d3ee;
-    --pink:#ec4899;
-    --border:rgba(255,255,255,.09);
-}
-
 body{
-    font-family:Inter,Arial,sans-serif;
-    background:
-      radial-gradient(circle at 10% 10%,rgba(139,92,246,.18),transparent 28%),
-      radial-gradient(circle at 90% 20%,rgba(34,211,238,.12),transparent 25%),
-      var(--bg);
-    color:var(--text);
-    min-height:100vh;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#080b18;
+    color:#fff;
 }
-
-/* NAVBAR */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
-    backdrop-filter:blur(18px);
-    background:rgba(8,11,22,.78);
-    border-bottom:1px solid var(--border);
+    background:rgba(8,11,24,.92);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid #252b45;
 }
 
-.nav-inner{
+.navbar{
     max-width:1200px;
     margin:auto;
-    padding:16px 22px;
+    padding:18px 22px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:20px;
+    align-items:center;
 }
 
 .logo{
-    font-size:24px;
-    font-weight:900;
-    text-decoration:none;
-    color:white;
+    font-size:25px;
+    font-weight:bold;
 }
 
 .logo span{
-    color:var(--secondary);
+    color:#22d3ee;
 }
 
-.nav-links{
-    display:flex;
-    gap:20px;
-}
-
-.nav-links a{
-    color:var(--muted);
+nav a{
+    color:#b8bfd8;
     text-decoration:none;
-    font-size:14px;
-    transition:.3s;
+    margin-left:22px;
 }
 
-.nav-links a:hover{
-    color:white;
+nav a:hover{
+    color:#fff;
 }
-
-.menu{
-    display:none;
-    font-size:25px;
-    cursor:pointer;
-}
-
-/* HERO */
 
 .hero{
     max-width:1200px;
     margin:auto;
-    min-height:650px;
-    padding:90px 22px 70px;
-    display:grid;
-    grid-template-columns:1.15fr .85fr;
+    padding:90px 22px;
+    min-height:600px;
+    display:flex;
     align-items:center;
+    justify-content:space-between;
     gap:50px;
+}
+
+.hero-text{
+    max-width:650px;
 }
 
 .badge{
     display:inline-block;
-    padding:8px 14px;
-    border:1px solid rgba(139,92,246,.4);
+    padding:8px 15px;
     border-radius:30px;
-    background:rgba(139,92,246,.1);
-    color:#c4b5fd;
-    font-size:13px;
-    margin-bottom:22px;
+    background:#151b35;
+    border:1px solid #343b62;
+    color:#a78bfa;
+    margin-bottom:20px;
 }
 
-.hero h1{
-    font-size:clamp(45px,7vw,82px);
-    line-height:.98;
-    letter-spacing:-4px;
+h1{
+    font-size:65px;
+    line-height:1;
 }
 
 .gradient{
-    background:linear-gradient(90deg,#a78bfa,#22d3ee,#f472b6);
+    background:linear-gradient(90deg,#8b5cf6,#22d3ee,#ec4899);
     -webkit-background-clip:text;
     color:transparent;
 }
 
 .hero p{
-    color:var(--muted);
+    color:#aeb5cc;
     font-size:18px;
     line-height:1.7;
-    max-width:650px;
     margin:25px 0;
-}
-
-.buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
 }
 
 .btn{
     display:inline-block;
     padding:13px 20px;
     border-radius:12px;
-    text-decoration:none;
-    border:1px solid var(--border);
+    border:1px solid #303750;
+    background:#12172b;
     color:white;
-    background:var(--card);
+    text-decoration:none;
     cursor:pointer;
-    font-weight:700;
-    transition:.3s;
+    margin:5px;
 }
 
 .btn:hover{
-    transform:translateY(-3px);
-    border-color:var(--primary);
+    transform:translateY(-2px);
 }
 
-.btn-primary{
-    background:linear-gradient(135deg,var(--primary),#6366f1);
-    border:none;
+.primary{
+    background:linear-gradient(135deg,#8b5cf6,#6366f1);
+    border:0;
 }
-
-/* HERO CARD */
 
 .hero-card{
-    position:relative;
-    padding:35px;
-    min-height:390px;
-    border:1px solid var(--border);
+    width:380px;
+    padding:30px;
     border-radius:28px;
-    background:linear-gradient(145deg,rgba(139,92,246,.15),rgba(34,211,238,.06));
-    box-shadow:0 30px 100px rgba(0,0,0,.35);
-    overflow:hidden;
-}
-
-.orb{
-    position:absolute;
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#8b5cf6,#22d3ee);
-    filter:blur(2px);
-    opacity:.8;
-    right:-45px;
-    top:-45px;
-}
-
-.hero-card-content{
-    position:relative;
-    z-index:2;
+    background:linear-gradient(145deg,#171d38,#0e1327);
+    border:1px solid #2a3150;
+    box-shadow:0 25px 80px #0008;
 }
 
 .hero-card h2{
-    font-size:30px;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
-.mini-card{
-    padding:17px;
-    border:1px solid var(--border);
-    background:rgba(0,0,0,.2);
-    border-radius:16px;
-    margin:12px 0;
+.mini{
     display:flex;
-    align-items:center;
     gap:15px;
+    align-items:center;
+    padding:16px;
+    margin:12px 0;
+    background:#0b1021;
+    border:1px solid #252b45;
+    border-radius:15px;
 }
 
-.icon{
-    width:45px;
-    height:45px;
-    border-radius:13px;
-    display:grid;
-    place-items:center;
-    background:linear-gradient(135deg,#8b5cf6,#ec4899);
-    font-size:22px;
+.mini-icon{
+    font-size:25px;
 }
-
-/* GENERAL */
 
 section{
     max-width:1200px;
     margin:auto;
-    padding:80px 22px;
+    padding:75px 22px;
 }
 
-.section-title{
+.title{
     text-align:center;
-    margin-bottom:45px;
+    margin-bottom:40px;
 }
 
-.section-title h2{
+.title h2{
     font-size:40px;
     margin-bottom:10px;
 }
 
-.section-title p{
-    color:var(--muted);
+.title p{
+    color:#9ea6c0;
 }
 
-/* SEARCH */
-
-.search-box{
+.search{
     max-width:700px;
-    margin:0 auto 45px;
-    position:relative;
+    margin:0 auto 40px;
 }
 
-.search-box input{
+.search input{
     width:100%;
-    padding:18px 22px;
-    border-radius:15px;
-    border:1px solid var(--border);
-    background:var(--card);
+    padding:17px;
+    border-radius:13px;
+    background:#11162a;
     color:white;
+    border:1px solid #303750;
     outline:none;
     font-size:16px;
 }
 
-.search-box input:focus{
-    border-color:var(--primary);
-    box-shadow:0 0 25px rgba(139,92,246,.15);
-}
-
-/* SEMESTERS */
-
 .grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:18px;
+    gap:20px;
 }
 
 .card{
-    background:linear-gradient(145deg,var(--card),var(--card2));
-    border:1px solid var(--border);
-    border-radius:20px;
+    background:linear-gradient(145deg,#12172b,#171d34);
+    border:1px solid #292f4b;
     padding:25px;
+    border-radius:20px;
     transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-6px);
-    border-color:rgba(139,92,246,.5);
-    box-shadow:0 20px 50px rgba(0,0,0,.25);
-}
-
-.semester-number{
-    font-size:14px;
-    color:#a78bfa;
-    margin-bottom:10px;
+    border-color:#7355d9;
 }
 
 .card h3{
-    margin-bottom:10px;
-    font-size:22px;
+    font-size:23px;
+    margin:10px 0;
 }
 
 .card p{
-    color:var(--muted);
+    color:#a5acc3;
     line-height:1.6;
 }
 
-.card .small-btn{
-    margin-top:18px;
-    display:inline-block;
-    padding:9px 13px;
-    border-radius:9px;
-    background:rgba(139,92,246,.12);
-    color:#c4b5fd;
-    border:1px solid rgba(139,92,246,.2);
+.sem{
+    color:#a78bfa;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.subjects{
+    display:none;
+    margin-top:20px;
+    padding-top:20px;
+    border-top:1px solid #292f4b;
+}
+
+.subjects div{
+    padding:12px;
+    margin:7px 0;
+    background:#0c1122;
+    border-radius:10px;
     cursor:pointer;
+    color:#d8dcf0;
 }
 
-/* FEATURES */
-
-.feature-icon{
-    font-size:35px;
-    margin-bottom:18px;
+.subjects div:hover{
+    background:#1b2240;
 }
 
-/* NOTES */
-
-.note-card{
-    position:relative;
+.show{
+    display:block;
 }
 
-.tag{
-    display:inline-block;
-    font-size:11px;
-    padding:5px 9px;
-    border-radius:20px;
-    background:rgba(34,211,238,.1);
-    color:#67e8f9;
-    margin-bottom:14px;
+.note{
+    display:block;
 }
 
 .note-actions{
@@ -347,249 +257,183 @@ section{
     flex:1;
     padding:10px;
     border-radius:9px;
-    border:1px solid var(--border);
-    background:#0d1224;
+    border:1px solid #303750;
+    background:#0b1020;
     color:white;
     cursor:pointer;
 }
 
 .note-actions button:hover{
-    border-color:var(--secondary);
+    border-color:#22d3ee;
 }
 
-/* REMINDER */
-
-.reminder{
+.form{
     max-width:800px;
     margin:auto;
-    background:linear-gradient(145deg,#11162b,#171d38);
-    border:1px solid var(--border);
-    border-radius:25px;
     padding:30px;
+    border-radius:22px;
+    background:#11162b;
+    border:1px solid #292f4b;
 }
 
-.form-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-}
-
-input,select,textarea{
+.form input,
+.form textarea,
+.form select{
     width:100%;
     padding:13px;
+    margin:7px 0;
+    background:#080d1c;
+    border:1px solid #303750;
     border-radius:10px;
-    border:1px solid var(--border);
-    background:#090d1b;
     color:white;
-    outline:none;
 }
 
-textarea{
-    min-height:120px;
-    resize:vertical;
+.form textarea{
+    height:120px;
 }
-
-.form-full{
-    grid-column:1/-1;
-}
-
-.reminder button{
-    margin-top:15px;
-}
-
-/* ABOUT */
 
 .about{
-    max-width:850px;
-    margin:auto;
+    max-width:800px;
     text-align:center;
+    margin:auto;
 }
 
 .about p{
-    color:var(--muted);
-    line-height:1.9;
-    font-size:17px;
+    color:#aab1c8;
+    line-height:1.8;
 }
-
-/* FOOTER */
 
 footer{
-    border-top:1px solid var(--border);
-    padding:40px 22px;
     text-align:center;
-    color:var(--muted);
+    padding:40px 20px;
+    border-top:1px solid #252b45;
+    color:#8991aa;
 }
-
-.footer-logo{
-    font-size:24px;
-    font-weight:900;
-    color:white;
-    margin-bottom:10px;
-}
-
-/* TOAST */
 
 .toast{
     position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#171d31;
-    border:1px solid var(--border);
+    right:20px;
+    bottom:20px;
+    background:#181e35;
+    border:1px solid #363d5b;
     padding:15px 20px;
     border-radius:12px;
-    transform:translateY(100px);
-    opacity:0;
-    transition:.3s;
-    z-index:3000;
+    display:none;
+    z-index:2000;
 }
 
 .toast.show{
-    transform:translateY(0);
-    opacity:1;
+    display:block;
 }
-
-/* MOBILE */
 
 @media(max-width:800px){
 
-    .nav-links{
+    nav a{
         display:none;
-        position:absolute;
-        top:65px;
-        left:0;
-        width:100%;
-        padding:20px;
-        background:#0a0e1c;
-        flex-direction:column;
-        border-bottom:1px solid var(--border);
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-
-    .menu{
-        display:block;
     }
 
     .hero{
-        grid-template-columns:1fr;
+        flex-direction:column;
         padding-top:60px;
     }
 
-    .hero h1{
-        letter-spacing:-2px;
+    h1{
+        font-size:48px;
+    }
+
+    .hero-card{
+        width:100%;
     }
 
     .grid{
         grid-template-columns:1fr;
     }
 
-    .form-grid{
-        grid-template-columns:1fr;
-    }
-
-    .form-full{
-        grid-column:auto;
-    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-
 <nav>
-<div class="nav-inner">
+<div class="navbar">
 
-<a href="#home" class="logo">BCA<span>HUB</span> 🎓</a>
+<div class="logo">
+BCA<span>HUB</span> 🎓
+</div>
 
-<div class="nav-links" id="navLinks">
+<div>
 <a href="#home">Home</a>
 <a href="#semesters">Semesters</a>
 <a href="#notes">Notes</a>
-<a href="#features">Features</a>
 <a href="#reminder">Reminder</a>
 <a href="#contact">Contact</a>
 </div>
-
-<div class="menu" onclick="toggleMenu()">☰</div>
 
 </div>
 </nav>
 
 
-<!-- HERO -->
+<!-- HOME -->
 
 <header class="hero" id="home">
 
-<div>
+<div class="hero-text">
 
-<span class="badge">🎓 Made for BCA Students</span>
+<div class="badge">
+🎓 Made for BCA Students
+</div>
 
 <h1>
-Study smarter.<br>
-Build your <span class="gradient">future.</span>
+Your BCA<br>
+<span class="gradient">Study Hub.</span>
 </h1>
 
 <p>
-BCA HUB is your simple student companion for notes,
-PDFs, practicals, projects, study resources and everything
-you need during your BCA journey.
+Notes, PDFs, practicals, projects and useful
+study resources — organized in one place for
+BCA students.
 </p>
 
-<div class="buttons">
-
-<a href="#semesters" class="btn btn-primary">
-📚 Explore Notes
+<a href="#semesters" class="btn primary">
+📚 Explore Semesters
 </a>
 
 <a href="#notes" class="btn">
-📄 Browse PDFs
+📄 View Notes
 </a>
-
-</div>
 
 </div>
 
 
 <div class="hero-card">
 
-<div class="orb"></div>
+<h2>🚀 BCA HUB</h2>
 
-<div class="hero-card-content">
-
-<h2>🚀 Your Study Hub</h2>
-
-<div class="mini-card">
-<div class="icon">📚</div>
+<div class="mini">
+<div class="mini-icon">📚</div>
 <div>
-<strong>Semester Notes</strong>
-<br>
-<small>Organized by semester</small>
+<b>Semester Notes</b><br>
+<small>Semester 1 — 6</small>
 </div>
 </div>
 
-<div class="mini-card">
-<div class="icon">📄</div>
+<div class="mini">
+<div class="mini-icon">📄</div>
 <div>
-<strong>PDF Resources</strong>
-<br>
-<small>View & download notes</small>
+<b>PDF Resources</b><br>
+<small>View & Download</small>
 </div>
 </div>
 
-<div class="mini-card">
-<div class="icon">⏰</div>
+<div class="mini">
+<div class="mini-icon">⏰</div>
 <div>
-<strong>Study Reminders</strong>
-<br>
-<small>Never miss your study time</small>
+<b>Study Reminder</b><br>
+<small>Plan your study time</small>
 </div>
 </div>
 
-</div>
 </div>
 
 </header>
@@ -599,20 +443,20 @@ you need during your BCA journey.
 
 <section>
 
-<div class="section-title">
+<div class="title">
 
-<h2>🔎 Find Your Notes</h2>
+<h2>🔎 Search Notes</h2>
 
-<p>Search subjects, notes, PDFs and resources.</p>
+<p>Find subjects and resources quickly.</p>
 
 </div>
 
-<div class="search-box">
+<div class="search">
 
 <input
+id="search"
 type="text"
-id="searchInput"
-placeholder="Search e.g. DBMS, C Programming, Mathematics..."
+placeholder="Search C Programming, DBMS, Java..."
 onkeyup="searchNotes()">
 
 </div>
@@ -624,123 +468,261 @@ onkeyup="searchNotes()">
 
 <section id="semesters">
 
-<div class="section-title">
+<div class="title">
 
-<h2>📚 Explore Semesters</h2>
+<h2>📚 BCA Semesters</h2>
 
-<p>Select your semester and start learning.</p>
-
-</div>
-
-<div class="grid" id="semesterGrid">
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 01</div>
-<h3>🌱 Foundation</h3>
-<p>Computer fundamentals, programming, mathematics and communication.</p>
-<button class="small-btn" onclick="showMessage('Semester 1 selected!')">
-Explore →
-</button>
-</div>
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 02</div>
-<h3>💻 Programming</h3>
-<p>C++, data structures, DBMS and operating system resources.</p>
-<button class="small-btn" onclick="showMessage('Semester 2 selected!')">
-Explore →
-</button>
-</div>
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 03</div>
-<h3>⚙️ Development</h3>
-<p>Java, web development, databases and software engineering.</p>
-<button class="small-btn" onclick="showMessage('Semester 3 selected!')">
-Explore →
-</button>
-</div>
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 04</div>
-<h3>🧠 Advanced Concepts</h3>
-<p>Advanced programming, networking and application development.</p>
-<button class="small-btn" onclick="showMessage('Semester 4 selected!')">
-Explore →
-</button>
-</div>
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 05</div>
-<h3>🤖 AI & Technology</h3>
-<p>Artificial intelligence, advanced databases and modern technologies.</p>
-<button class="small-btn" onclick="showMessage('Semester 5 selected!')">
-Explore →
-</button>
-</div>
-
-<div class="card semester">
-<div class="semester-number">SEMESTER 06</div>
-<h3>🚀 Career & Project</h3>
-<p>Final projects, internships, interview preparation and career resources.</p>
-<button class="small-btn" onclick="showMessage('Semester 6 selected!')">
-Explore →
-</button>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FEATURES -->
-
-<section id="features">
-
-<div class="section-title">
-
-<h2>✨ What BCA HUB Offers</h2>
-
-<p>Everything organized in one place.</p>
+<p>Choose your semester to see subjects.</p>
 
 </div>
 
 <div class="grid">
 
-<div class="card">
-<div class="feature-icon">📘</div>
-<h3>Study Notes</h3>
-<p>Find organized notes for your BCA subjects.</p>
+<!-- SEM 1 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 01</div>
+
+<h3>🌱 Foundation</h3>
+
+<p>
+Start your BCA journey with fundamental subjects.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem1')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem1">
+
+<div onclick="subject('Computer Fundamentals')">
+🖥️ Computer Fundamentals
 </div>
 
-<div class="card">
-<div class="feature-icon">📥</div>
-<h3>PDF Downloads</h3>
-<p>Access useful study PDFs and resources.</p>
+<div onclick="subject('C Programming')">
+💻 C Programming
 </div>
 
-<div class="card">
-<div class="feature-icon">🧪</div>
-<h3>Practicals</h3>
-<p>Programming practicals and lab resources.</p>
+<div onclick="subject('Mathematics')">
+📐 Mathematics
 </div>
 
-<div class="card">
-<div class="feature-icon">💡</div>
-<h3>Projects</h3>
-<p>Get project ideas and development resources.</p>
+<div onclick="subject('Digital Electronics')">
+⚡ Digital Electronics
 </div>
 
-<div class="card">
-<div class="feature-icon">📤</div>
-<h3>Share Notes</h3>
-<p>Help other students by sharing useful notes.</p>
+<div onclick="subject('Communication Skills')">
+🗣️ Communication Skills
 </div>
 
-<div class="card">
-<div class="feature-icon">💬</div>
-<h3>Chat With Us</h3>
-<p>Send your questions and feedback to BCA HUB.</p>
+</div>
+
+</div>
+
+
+<!-- SEM 2 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 02</div>
+
+<h3>💻 Programming</h3>
+
+<p>
+Programming and core computer science concepts.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem2')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem2">
+
+<div onclick="subject('C++ Programming')">
+💻 C++ Programming
+</div>
+
+<div onclick="subject('Data Structures')">
+🌳 Data Structures
+</div>
+
+<div onclick="subject('DBMS')">
+🗄️ Database Management
+</div>
+
+<div onclick="subject('Operating System')">
+⚙️ Operating System
+</div>
+
+<div onclick="subject('Computer Networks')">
+🌐 Computer Networks
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEM 3 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 03</div>
+
+<h3>⚙️ Development</h3>
+
+<p>
+Learn software development and web technologies.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem3')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem3">
+
+<div onclick="subject('Java Programming')">
+☕ Java Programming
+</div>
+
+<div onclick="subject('Web Development')">
+🌐 Web Development
+</div>
+
+<div onclick="subject('Software Engineering')">
+🛠️ Software Engineering
+</div>
+
+<div onclick="subject('Advanced DBMS')">
+🗄️ Advanced DBMS
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEM 4 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 04</div>
+
+<h3>🧠 Advanced</h3>
+
+<p>
+Explore advanced programming and application concepts.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem4')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem4">
+
+<div onclick="subject('Python')">
+🐍 Python
+</div>
+
+<div onclick="subject('Computer Graphics')">
+🎨 Computer Graphics
+</div>
+
+<div onclick="subject('Networking')">
+🌐 Networking
+</div>
+
+<div onclick="subject('Mobile Development')">
+📱 Mobile Development
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEM 5 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 05</div>
+
+<h3>🤖 AI & Technology</h3>
+
+<p>
+Modern technologies and advanced computer concepts.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem5')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem5">
+
+<div onclick="subject('Artificial Intelligence')">
+🤖 Artificial Intelligence
+</div>
+
+<div onclick="subject('Machine Learning')">
+🧠 Machine Learning
+</div>
+
+<div onclick="subject('Cloud Computing')">
+☁️ Cloud Computing
+</div>
+
+<div onclick="subject('Cyber Security')">
+🔐 Cyber Security
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SEM 6 -->
+
+<div class="card semester">
+
+<div class="sem">SEMESTER 06</div>
+
+<h3>🚀 Career & Project</h3>
+
+<p>
+Prepare for projects, internships and your career.
+</p>
+
+<button class="btn primary"
+onclick="toggleSubjects('sem6')">
+View Subjects →
+</button>
+
+<div class="subjects" id="sem6">
+
+<div onclick="subject('Major Project')">
+🚀 Major Project
+</div>
+
+<div onclick="subject('Interview Preparation')">
+💼 Interview Preparation
+</div>
+
+<div onclick="subject('Resume Building')">
+📄 Resume Building
+</div>
+
+<div onclick="subject('Career Resources')">
+🎯 Career Resources
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -752,54 +734,34 @@ Explore →
 
 <section id="notes">
 
-<div class="section-title">
+<div class="title">
 
-<h2>📄 Latest Resources</h2>
+<h2>📄 Notes & Resources</h2>
 
-<p>Sample resources — we'll add your real PDFs later.</p>
+<p>Our notes library will grow semester by semester.</p>
 
 </div>
 
 <div class="grid" id="notesGrid">
 
-<div class="card note-card">
+<div class="card note">
 
-<span class="tag">SEM 1</span>
-
-<h3>📘 Computer Fundamentals</h3>
-
-<p>
-Introduction to computers, hardware, software and basic concepts.
-</p>
-
-<div class="note-actions">
-
-<button onclick="viewPDF()">👁 View</button>
-
-<button onclick="downloadSample()">⬇ Download</button>
-
-</div>
-
-</div>
-
-
-<div class="card note-card">
-
-<span class="tag">SEM 1</span>
+<div class="sem">SEM 1</div>
 
 <h3>💻 C Programming</h3>
 
 <p>
-Basic programming concepts, variables, loops and functions.
+Programming basics, variables, loops,
+functions and arrays.
 </p>
 
 <div class="note-actions">
 
-<button onclick="showMessage('C Programming PDF coming soon!')">
+<button onclick="message('C Programming PDF will be added soon 📄')">
 👁 View
 </button>
 
-<button onclick="showMessage('C Programming PDF coming soon!')">
+<button onclick="message('Download system coming soon 📥')">
 ⬇ Download
 </button>
 
@@ -808,23 +770,50 @@ Basic programming concepts, variables, loops and functions.
 </div>
 
 
-<div class="card note-card">
+<div class="card note">
 
-<span class="tag">SEM 2</span>
+<div class="sem">SEM 1</div>
 
-<h3>🗄️ DBMS</h3>
+<h3>🖥️ Computer Fundamentals</h3>
 
 <p>
-Database concepts, SQL, normalization and database design.
+Basic computer concepts, hardware,
+software and operating systems.
 </p>
 
 <div class="note-actions">
 
-<button onclick="showMessage('DBMS PDF coming soon!')">
+<button onclick="message('PDF viewer coming soon 📄')">
 👁 View
 </button>
 
-<button onclick="showMessage('DBMS PDF coming soon!')">
+<button onclick="message('PDF download coming soon 📥')">
+⬇ Download
+</button>
+
+</div>
+
+</div>
+
+
+<div class="card note">
+
+<div class="sem">SEM 2</div>
+
+<h3>🗄️ DBMS</h3>
+
+<p>
+Database concepts, SQL, normalization
+and database design.
+</p>
+
+<div class="note-actions">
+
+<button onclick="message('DBMS PDF coming soon 📄')">
+👁 View
+</button>
+
+<button onclick="message('DBMS download coming soon 📥')">
 ⬇ Download
 </button>
 
@@ -841,47 +830,34 @@ Database concepts, SQL, normalization and database design.
 
 <section id="reminder">
 
-<div class="section-title">
+<div class="title">
 
 <h2>⏰ Study Reminder</h2>
 
-<p>Create a simple study reminder on this device.</p>
+<p>Save your study reminder on this device.</p>
 
 </div>
 
-<div class="reminder">
+<div class="form">
 
-<div class="form-grid">
+<input id="rsubject" placeholder="Subject">
 
-<div>
-<label>Subject</label>
-<input id="reminderSubject" placeholder="e.g. Java">
-</div>
+<input id="rdate" type="date">
 
-<div>
-<label>Date</label>
-<input id="reminderDate" type="date">
-</div>
+<input id="rtime" type="time">
 
-<div>
-<label>Time</label>
-<input id="reminderTime" type="time">
-</div>
+<select id="rtype">
 
-<div>
-<label>Reminder Type</label>
-<select id="reminderType">
 <option>Study</option>
 <option>Revision</option>
 <option>Assignment</option>
 <option>Exam Preparation</option>
+
 </select>
-</div>
 
-</div>
-
-<button class="btn btn-primary" onclick="setReminder()">
-⏰ Set Reminder
+<button class="btn primary"
+onclick="saveReminder()">
+⏰ Save Reminder
 </button>
 
 </div>
@@ -889,34 +865,32 @@ Database concepts, SQL, normalization and database design.
 </section>
 
 
-<!-- SHARE -->
+<!-- SHARE NOTES -->
 
 <section>
 
-<div class="section-title">
+<div class="title">
 
 <h2>📤 Share Your Notes</h2>
 
-<p>Have useful notes? Tell us about them.</p>
+<p>Help other BCA students by sharing useful resources.</p>
 
 </div>
 
-<div class="reminder">
+<div class="form">
 
-<div class="form-grid">
-
-<input placeholder="Your name">
+<input placeholder="Your Name">
 
 <input placeholder="Semester">
 
-<input class="form-full" placeholder="Subject / Notes title">
+<input placeholder="Subject">
 
-<textarea class="form-full" placeholder="Tell us about your notes..."></textarea>
+<textarea placeholder="Tell us about your notes..."></textarea>
 
-</div>
+<button class="btn primary"
+onclick="message('Thank you! Your note submission has been recorded as a demo. 📚')">
+📤 Submit
 
-<button class="btn btn-primary" onclick="showMessage('Thank you! Your submission demo is ready. 📚')">
-📤 Submit Notes
 </button>
 
 </div>
@@ -924,40 +898,31 @@ Database concepts, SQL, normalization and database design.
 </section>
 
 
-<!-- ABOUT -->
+<!-- CONTACT -->
 
 <section id="contact">
 
 <div class="about">
 
-<div class="section-title">
+<div class="title">
 
-<h2>🎓 About BCA HUB</h2>
+<h2>💬 Chat With Us</h2>
 
 </div>
 
 <p>
-BCA HUB is being created as a student-friendly platform
-where BCA students can discover notes, PDFs, practical
-resources, projects and study tools without searching
-through many different places.
+Have a question, suggestion or want to share
+something useful with BCA HUB? Contact us.
+Our real-time chat system will be added in
+a future version.
 </p>
 
 <br>
 
-<div class="buttons" style="justify-content:center">
-
-<button class="btn btn-primary"
-onclick="showMessage('Chat system will be connected in the next version! 💬')">
-💬 Chat With Us
+<button class="btn primary"
+onclick="message('Chat system is coming soon! 💬')">
+💬 Start Chat
 </button>
-
-<button class="btn"
-onclick="showMessage('Thanks for supporting BCA HUB! ❤️')">
-❤️ Support
-</button>
-
-</div>
 
 </div>
 
@@ -968,171 +933,131 @@ onclick="showMessage('Thanks for supporting BCA HUB! ❤️')">
 
 <footer>
 
-<div class="footer-logo">
+<h2>
 BCA<span style="color:#22d3ee">HUB</span> 🎓
-</div>
+</h2>
 
 <p>
-Notes • PDFs • Practicals • Projects • Resources
+Notes • PDFs • Practicals • Projects • Career
 </p>
 
 <br>
 
 <small>
-© 2026 BCA HUB. Made for students.
+© 2026 BCA HUB | Made for BCA Students
 </small>
 
 </footer>
 
-
-<!-- TOAST -->
 
 <div class="toast" id="toast"></div>
 
 
 <script>
 
-/* MOBILE MENU */
+function toggleSubjects(id){
 
-function toggleMenu(){
+    const box = document.getElementById(id);
 
-    document
-    .getElementById("navLinks")
-    .classList.toggle("active");
+    box.classList.toggle("show");
 
 }
 
 
-/* TOAST MESSAGE */
+function subject(name){
 
-function showMessage(message){
+    message(
+        name +
+        " selected 📚 — Notes & PDFs will be connected here next!"
+    );
 
-    const toast = document.getElementById("toast");
+}
 
-    toast.textContent = message;
+
+function message(text){
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.innerText = text;
 
     toast.classList.add("show");
 
-    setTimeout(()=>{
+    setTimeout(function(){
+
         toast.classList.remove("show");
+
     },3000);
 
 }
 
 
-/* SEARCH */
-
 function searchNotes(){
 
     const query =
         document
-        .getElementById("searchInput")
+        .getElementById("search")
         .value
         .toLowerCase();
 
-    const cards =
-        document.querySelectorAll(".note-card");
+    const notes =
+        document.querySelectorAll(".note");
 
-    cards.forEach(card => {
+    notes.forEach(function(note){
 
         const text =
-            card.textContent.toLowerCase();
+            note.innerText.toLowerCase();
 
-        card.style.display =
-            text.includes(query)
-            ? "block"
-            : "none";
+        if(text.includes(query)){
+
+            note.style.display="block";
+
+        }else{
+
+            note.style.display="none";
+
+        }
 
     });
 
 }
 
 
-/* SAMPLE PDF */
-
-function viewPDF(){
-
-    showMessage("PDF viewer will open when your PDF is uploaded. 📄");
-
-}
-
-function downloadSample(){
-
-    showMessage("Upload your PDF file to GitHub first. 📥");
-
-}
-
-
-/* REMINDER */
-
-function setReminder(){
+function saveReminder(){
 
     const subject =
-        document.getElementById("reminderSubject").value;
+        document.getElementById("rsubject").value;
 
     const date =
-        document.getElementById("reminderDate").value;
+        document.getElementById("rdate").value;
 
     const time =
-        document.getElementById("reminderTime").value;
+        document.getElementById("rtime").value;
 
     const type =
-        document.getElementById("reminderType").value;
+        document.getElementById("rtype").value;
 
     if(!subject || !date || !time){
 
-        showMessage("Please fill Subject, Date and Time.");
+        message("Please fill Subject, Date and Time.");
 
         return;
 
     }
 
-    const reminder = {
-        subject,
-        date,
-        time,
-        type
-    };
-
     localStorage.setItem(
-        "bcaHubReminder",
-        JSON.stringify(reminder)
+        "bcaReminder",
+        JSON.stringify({
+            subject:subject,
+            date:date,
+            time:time,
+            type:type
+        })
     );
 
-    showMessage(
-        "Reminder saved successfully! ⏰"
-    );
+    message("Reminder saved successfully! ⏰");
 
 }
-
-
-/* LOAD SAVED REMINDER */
-
-window.addEventListener("load",()=>{
-
-    const saved =
-        localStorage.getItem("bcaHubReminder");
-
-    if(saved){
-
-        const reminder =
-            JSON.parse(saved);
-
-        document.getElementById("reminderSubject").value =
-            reminder.subject;
-
-        document.getElementById("reminderDate").value =
-            reminder.date;
-
-        document.getElementById("reminderTime").value =
-            reminder.time;
-
-        document.getElementById("reminderType").value =
-            reminder.type;
-
-    }
-
-});
 
 </script>
 
