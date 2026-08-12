@@ -6,348 +6,348 @@
 <title>BCA HUB | Student Notes</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#080b18;
-    color:#fff;
+font-family:Arial,sans-serif;
+background:#080b18;
+color:#fff;
 }
 
 nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(8,11,24,.92);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid #252b45;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(8,11,24,.94);
+backdrop-filter:blur(15px);
+border-bottom:1px solid #252b45;
 }
 
 .navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:18px 22px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+max-width:1200px;
+margin:auto;
+padding:18px 22px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-    font-size:25px;
-    font-weight:bold;
+font-size:25px;
+font-weight:bold;
 }
 
 .logo span{
-    color:#22d3ee;
+color:#22d3ee;
 }
 
 nav a{
-    color:#b8bfd8;
-    text-decoration:none;
-    margin-left:22px;
+color:#b8bfd8;
+text-decoration:none;
+margin-left:20px;
 }
 
 nav a:hover{
-    color:#fff;
+color:#22d3ee;
 }
 
 .hero{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 22px;
-    min-height:600px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:50px;
+max-width:1200px;
+margin:auto;
+padding:90px 22px;
+min-height:570px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
 }
 
 .hero-text{
-    max-width:650px;
+max-width:650px;
 }
 
 .badge{
-    display:inline-block;
-    padding:8px 15px;
-    border-radius:30px;
-    background:#151b35;
-    border:1px solid #343b62;
-    color:#a78bfa;
-    margin-bottom:20px;
+display:inline-block;
+padding:8px 15px;
+border-radius:30px;
+background:#151b35;
+border:1px solid #343b62;
+color:#a78bfa;
+margin-bottom:20px;
 }
 
 h1{
-    font-size:65px;
-    line-height:1;
+font-size:65px;
+line-height:1;
 }
 
 .gradient{
-    background:linear-gradient(90deg,#8b5cf6,#22d3ee,#ec4899);
-    -webkit-background-clip:text;
-    color:transparent;
+background:linear-gradient(90deg,#8b5cf6,#22d3ee,#ec4899);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .hero p{
-    color:#aeb5cc;
-    font-size:18px;
-    line-height:1.7;
-    margin:25px 0;
+color:#aeb5cc;
+font-size:18px;
+line-height:1.7;
+margin:25px 0;
 }
 
 .btn{
-    display:inline-block;
-    padding:13px 20px;
-    border-radius:12px;
-    border:1px solid #303750;
-    background:#12172b;
-    color:white;
-    text-decoration:none;
-    cursor:pointer;
-    margin:5px;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
+display:inline-block;
+padding:12px 19px;
+border-radius:11px;
+border:1px solid #303750;
+background:#12172b;
+color:white;
+text-decoration:none;
+cursor:pointer;
+margin:5px;
 }
 
 .primary{
-    background:linear-gradient(135deg,#8b5cf6,#6366f1);
-    border:0;
+background:linear-gradient(135deg,#8b5cf6,#6366f1);
+border:0;
 }
 
 .hero-card{
-    width:380px;
-    padding:30px;
-    border-radius:28px;
-    background:linear-gradient(145deg,#171d38,#0e1327);
-    border:1px solid #2a3150;
-    box-shadow:0 25px 80px #0008;
-}
-
-.hero-card h2{
-    margin-bottom:20px;
+width:370px;
+padding:30px;
+border-radius:28px;
+background:linear-gradient(145deg,#171d38,#0e1327);
+border:1px solid #2a3150;
+box-shadow:0 25px 80px #0008;
 }
 
 .mini{
-    display:flex;
-    gap:15px;
-    align-items:center;
-    padding:16px;
-    margin:12px 0;
-    background:#0b1021;
-    border:1px solid #252b45;
-    border-radius:15px;
-}
-
-.mini-icon{
-    font-size:25px;
+padding:16px;
+margin:12px 0;
+background:#0b1021;
+border:1px solid #252b45;
+border-radius:15px;
 }
 
 section{
-    max-width:1200px;
-    margin:auto;
-    padding:75px 22px;
+max-width:1200px;
+margin:auto;
+padding:75px 22px;
 }
 
 .title{
-    text-align:center;
-    margin-bottom:40px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .title h2{
-    font-size:40px;
-    margin-bottom:10px;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .title p{
-    color:#9ea6c0;
+color:#9ea6c0;
 }
 
 .search{
-    max-width:700px;
-    margin:0 auto 40px;
+max-width:700px;
+margin:auto;
 }
 
 .search input{
-    width:100%;
-    padding:17px;
-    border-radius:13px;
-    background:#11162a;
-    color:white;
-    border:1px solid #303750;
-    outline:none;
-    font-size:16px;
+width:100%;
+padding:17px;
+border-radius:13px;
+background:#11162a;
+color:white;
+border:1px solid #303750;
+outline:none;
+font-size:16px;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
 .card{
-    background:linear-gradient(145deg,#12172b,#171d34);
-    border:1px solid #292f4b;
-    padding:25px;
-    border-radius:20px;
-    transition:.3s;
+background:linear-gradient(145deg,#12172b,#171d34);
+border:1px solid #292f4b;
+padding:25px;
+border-radius:20px;
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    border-color:#7355d9;
+transform:translateY(-6px);
+border-color:#7355d9;
 }
 
 .card h3{
-    font-size:23px;
-    margin:10px 0;
+font-size:23px;
+margin:10px 0;
 }
 
 .card p{
-    color:#a5acc3;
-    line-height:1.6;
+color:#a5acc3;
+line-height:1.6;
 }
 
 .sem{
-    color:#a78bfa;
-    font-size:13px;
-    font-weight:bold;
+color:#a78bfa;
+font-size:13px;
+font-weight:bold;
 }
 
 .subjects{
-    display:none;
-    margin-top:20px;
-    padding-top:20px;
-    border-top:1px solid #292f4b;
+display:none;
+margin-top:20px;
+padding-top:15px;
+border-top:1px solid #292f4b;
 }
 
-.subjects div{
-    padding:12px;
-    margin:7px 0;
-    background:#0c1122;
-    border-radius:10px;
-    cursor:pointer;
-    color:#d8dcf0;
+.subjects.show{
+display:block;
 }
 
-.subjects div:hover{
-    background:#1b2240;
+.subject{
+padding:13px;
+margin:7px 0;
+background:#0b1021;
+border-radius:10px;
+cursor:pointer;
+color:#dce1f2;
 }
 
-.show{
-    display:block;
+.subject:hover{
+background:#1b2240;
 }
 
-.note{
-    display:block;
+.units{
+display:none;
+margin-top:12px;
+padding:10px;
+background:#080d1b;
+border-radius:12px;
+}
+
+.units.show{
+display:block;
+}
+
+.unit{
+padding:13px;
+border-bottom:1px solid #252b45;
+}
+
+.unit:last-child{
+border-bottom:0;
+}
+
+.unit-name{
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.unit button{
+padding:8px 11px;
+border-radius:8px;
+border:1px solid #303750;
+background:#12182b;
+color:white;
+cursor:pointer;
+margin-right:5px;
+}
+
+.unit button:hover{
+border-color:#22d3ee;
 }
 
 .note-actions{
-    display:flex;
-    gap:8px;
-    margin-top:18px;
-}
-
-.note-actions button{
-    flex:1;
-    padding:10px;
-    border-radius:9px;
-    border:1px solid #303750;
-    background:#0b1020;
-    color:white;
-    cursor:pointer;
-}
-
-.note-actions button:hover{
-    border-color:#22d3ee;
+margin-top:15px;
 }
 
 .form{
-    max-width:800px;
-    margin:auto;
-    padding:30px;
-    border-radius:22px;
-    background:#11162b;
-    border:1px solid #292f4b;
+max-width:800px;
+margin:auto;
+padding:30px;
+border-radius:22px;
+background:#11162b;
+border:1px solid #292f4b;
 }
 
 .form input,
 .form textarea,
 .form select{
-    width:100%;
-    padding:13px;
-    margin:7px 0;
-    background:#080d1c;
-    border:1px solid #303750;
-    border-radius:10px;
-    color:white;
+width:100%;
+padding:13px;
+margin:7px 0;
+background:#080d1c;
+border:1px solid #303750;
+border-radius:10px;
+color:white;
 }
 
 .form textarea{
-    height:120px;
+height:120px;
 }
 
 .about{
-    max-width:800px;
-    text-align:center;
-    margin:auto;
+max-width:800px;
+text-align:center;
+margin:auto;
 }
 
 .about p{
-    color:#aab1c8;
-    line-height:1.8;
+color:#aab1c8;
+line-height:1.8;
 }
 
 footer{
-    text-align:center;
-    padding:40px 20px;
-    border-top:1px solid #252b45;
-    color:#8991aa;
+text-align:center;
+padding:40px 20px;
+border-top:1px solid #252b45;
+color:#8991aa;
 }
 
 .toast{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#181e35;
-    border:1px solid #363d5b;
-    padding:15px 20px;
-    border-radius:12px;
-    display:none;
-    z-index:2000;
+position:fixed;
+right:20px;
+bottom:20px;
+background:#181e35;
+border:1px solid #363d5b;
+padding:15px 20px;
+border-radius:12px;
+display:none;
+z-index:2000;
 }
 
 .toast.show{
-    display:block;
+display:block;
 }
 
 @media(max-width:800px){
 
-    nav a{
-        display:none;
-    }
+nav a{
+display:none;
+}
 
-    .hero{
-        flex-direction:column;
-        padding-top:60px;
-    }
+.hero{
+flex-direction:column;
+padding-top:60px;
+}
 
-    h1{
-        font-size:48px;
-    }
+h1{
+font-size:48px;
+}
 
-    .hero-card{
-        width:100%;
-    }
+.hero-card{
+width:100%;
+}
 
-    .grid{
-        grid-template-columns:1fr;
-    }
+.grid{
+grid-template-columns:1fr;
+}
 
 }
 </style>
@@ -373,8 +373,6 @@ BCA<span>HUB</span> 🎓
 </div>
 </nav>
 
-
-<!-- HOME -->
 
 <header class="hero" id="home">
 
@@ -411,35 +409,24 @@ BCA students.
 <h2>🚀 BCA HUB</h2>
 
 <div class="mini">
-<div class="mini-icon">📚</div>
-<div>
-<b>Semester Notes</b><br>
+📚 <b> Semester Notes</b><br>
 <small>Semester 1 — 6</small>
 </div>
-</div>
 
 <div class="mini">
-<div class="mini-icon">📄</div>
-<div>
-<b>PDF Resources</b><br>
+📄 <b> PDF Resources</b><br>
 <small>View & Download</small>
 </div>
-</div>
 
 <div class="mini">
-<div class="mini-icon">⏰</div>
-<div>
-<b>Study Reminder</b><br>
+⏰ <b> Study Reminder</b><br>
 <small>Plan your study time</small>
-</div>
 </div>
 
 </div>
 
 </header>
 
-
-<!-- SEARCH -->
 
 <section>
 
@@ -464,25 +451,29 @@ onkeyup="searchNotes()">
 </section>
 
 
-<!-- SEMESTERS -->
-
 <section id="semesters">
 
 <div class="title">
 
 <h2>📚 BCA Semesters</h2>
 
-<p>Choose your semester to see subjects.</p>
+<p>
+Semester → Subject → Unit → Notes
+</p>
 
 </div>
 
+
 <div class="grid">
 
-<!-- SEM 1 -->
+
+<!-- SEMESTER 1 -->
 
 <div class="card semester">
 
-<div class="sem">SEMESTER 01</div>
+<div class="sem">
+SEMESTER 01
+</div>
 
 <h3>🌱 Foundation</h3>
 
@@ -491,30 +482,300 @@ Start your BCA journey with fundamental subjects.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem1')">
+onclick="toggle('sem1')">
 View Subjects →
 </button>
 
+
 <div class="subjects" id="sem1">
 
-<div onclick="subject('Computer Fundamentals')">
+
+<div class="subject"
+onclick="toggle('cf')">
+
 🖥️ Computer Fundamentals
+
+<div class="units" id="cf">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Introduction to Computers
 </div>
 
-<div onclick="subject('C Programming')">
+<button onclick="viewNote(event,'Computer Fundamentals Unit 1')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Hardware & Software
+</div>
+
+<button onclick="viewNote(event,'Computer Fundamentals Unit 2')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 3 — Operating Systems
+</div>
+
+<button onclick="viewNote(event,'Computer Fundamentals Unit 3')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('cprogramming')">
+
 💻 C Programming
+
+<div class="units" id="cprogramming">
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Introduction to C
 </div>
 
-<div onclick="subject('Mathematics')">
+<button onclick="viewNote(event,'C Programming Unit 1')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Variables & Data Types
+</div>
+
+<button onclick="viewNote(event,'C Programming Unit 2')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 3 — Loops & Functions
+</div>
+
+<button onclick="viewNote(event,'C Programming Unit 3')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 4 — Arrays & Strings
+</div>
+
+<button onclick="viewNote(event,'C Programming Unit 4')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 5 — Pointers & Structures
+</div>
+
+<button onclick="viewNote(event,'C Programming Unit 5')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('math')">
+
 📐 Mathematics
+
+<div class="units" id="math">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Basic Mathematics
 </div>
 
-<div onclick="subject('Digital Electronics')">
+<button onclick="viewNote(event,'Mathematics Unit 1')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Algebra
+</div>
+
+<button onclick="viewNote(event,'Mathematics Unit 2')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('digital')">
+
 ⚡ Digital Electronics
+
+<div class="units" id="digital">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Number Systems
 </div>
 
-<div onclick="subject('Communication Skills')">
+<button onclick="viewNote(event,'Digital Electronics Unit 1')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Logic Gates
+</div>
+
+<button onclick="viewNote(event,'Digital Electronics Unit 2')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('communication')">
+
 🗣️ Communication Skills
+
+<div class="units" id="communication">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Communication Basics
+</div>
+
+<button onclick="viewNote(event,'Communication Unit 1')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Professional Communication
+</div>
+
+<button onclick="viewNote(event,'Communication Unit 2')">
+👁 View
+</button>
+
+<button onclick="downloadNote(event)">
+⬇ Download
+</button>
+
 </div>
 
 </div>
@@ -522,11 +783,18 @@ View Subjects →
 </div>
 
 
-<!-- SEM 2 -->
+</div>
+
+</div>
+
+
+<!-- SEMESTER 2 -->
 
 <div class="card semester">
 
-<div class="sem">SEMESTER 02</div>
+<div class="sem">
+SEMESTER 02
+</div>
 
 <h3>💻 Programming</h3>
 
@@ -535,30 +803,154 @@ Programming and core computer science concepts.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem2')">
+onclick="toggle('sem2')">
 View Subjects →
 </button>
 
 <div class="subjects" id="sem2">
 
-<div onclick="subject('C++ Programming')">
+
+<div class="subject"
+onclick="toggle('cpp')">
+
 💻 C++ Programming
+
+<div class="units" id="cpp">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — OOP Basics
 </div>
 
-<div onclick="subject('Data Structures')">
+<button onclick="viewNote(event,'C++ Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Classes & Objects
+</div>
+
+<button onclick="viewNote(event,'C++ Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('ds')">
+
 🌳 Data Structures
+
+<div class="units" id="ds">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Arrays & Linked Lists
 </div>
 
-<div onclick="subject('DBMS')">
-🗄️ Database Management
+<button onclick="viewNote(event,'Data Structures Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
-<div onclick="subject('Operating System')">
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Stacks & Queues
+</div>
+
+<button onclick="viewNote(event,'Data Structures Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('dbms')">
+
+🗄️ DBMS
+
+<div class="units" id="dbms">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Database Basics
+</div>
+
+<button onclick="viewNote(event,'DBMS Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — SQL
+</div>
+
+<button onclick="viewNote(event,'DBMS Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('os')">
+
 ⚙️ Operating System
+
+<div class="units" id="os">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Operating System Basics
 </div>
 
-<div onclick="subject('Computer Networks')">
+<button onclick="viewNote(event,'Operating System Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('network')">
+
 🌐 Computer Networks
+
+<div class="units" id="network">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Networking Basics
+</div>
+
+<button onclick="viewNote(event,'Computer Networks Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
 </div>
@@ -566,7 +958,12 @@ View Subjects →
 </div>
 
 
-<!-- SEM 3 -->
+</div>
+
+</div>
+
+
+<!-- SEMESTER 3 -->
 
 <div class="card semester">
 
@@ -575,30 +972,104 @@ View Subjects →
 <h3>⚙️ Development</h3>
 
 <p>
-Learn software development and web technologies.
+Software development and web technologies.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem3')">
+onclick="toggle('sem3')">
 View Subjects →
 </button>
 
 <div class="subjects" id="sem3">
 
-<div onclick="subject('Java Programming')">
+<div class="subject"
+onclick="toggle('java')">
+
 ☕ Java Programming
+
+<div class="units" id="java">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Java Basics
 </div>
 
-<div onclick="subject('Web Development')">
+<button onclick="viewNote(event,'Java Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — OOP in Java
+</div>
+
+<button onclick="viewNote(event,'Java Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('web')">
+
 🌐 Web Development
+
+<div class="units" id="web">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — HTML & CSS
 </div>
 
-<div onclick="subject('Software Engineering')">
+<button onclick="viewNote(event,'HTML CSS Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — JavaScript
+</div>
+
+<button onclick="viewNote(event,'JavaScript Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('software')">
+
 🛠️ Software Engineering
+
+<div class="units" id="software">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Software Process
 </div>
 
-<div onclick="subject('Advanced DBMS')">
-🗄️ Advanced DBMS
+<button onclick="viewNote(event,'Software Engineering Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -606,7 +1077,7 @@ View Subjects →
 </div>
 
 
-<!-- SEM 4 -->
+<!-- SEMESTER 4 -->
 
 <div class="card semester">
 
@@ -615,38 +1086,101 @@ View Subjects →
 <h3>🧠 Advanced</h3>
 
 <p>
-Explore advanced programming and application concepts.
+Advanced programming and application concepts.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem4')">
+onclick="toggle('sem4')">
 View Subjects →
 </button>
 
 <div class="subjects" id="sem4">
 
-<div onclick="subject('Python')">
+<div class="subject"
+onclick="toggle('python')">
+
 🐍 Python
+
+<div class="units" id="python">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Python Basics
 </div>
 
-<div onclick="subject('Computer Graphics')">
+<button onclick="viewNote(event,'Python Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Functions & Modules
+</div>
+
+<button onclick="viewNote(event,'Python Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('graphics')">
+
 🎨 Computer Graphics
+
+<div class="units" id="graphics">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Graphics Basics
 </div>
 
-<div onclick="subject('Networking')">
-🌐 Networking
+<button onclick="viewNote(event,'Computer Graphics Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
-<div onclick="subject('Mobile Development')">
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('mobile')">
+
 📱 Mobile Development
+
+<div class="units" id="mobile">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Mobile App Basics
+</div>
+
+<button onclick="viewNote(event,'Mobile Development Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
 </div>
 
 </div>
 
+</div>
 
-<!-- SEM 5 -->
+</div>
+
+
+<!-- SEMESTER 5 -->
 
 <div class="card semester">
 
@@ -659,34 +1193,97 @@ Modern technologies and advanced computer concepts.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem5')">
+onclick="toggle('sem5')">
 View Subjects →
 </button>
 
 <div class="subjects" id="sem5">
 
-<div onclick="subject('Artificial Intelligence')">
+<div class="subject"
+onclick="toggle('ai')">
+
 🤖 Artificial Intelligence
+
+<div class="units" id="ai">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Introduction to AI
 </div>
 
-<div onclick="subject('Machine Learning')">
+<button onclick="viewNote(event,'AI Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — Search & Knowledge
+</div>
+
+<button onclick="viewNote(event,'AI Unit 2')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('ml')">
+
 🧠 Machine Learning
+
+<div class="units" id="ml">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Machine Learning Basics
 </div>
 
-<div onclick="subject('Cloud Computing')">
-☁️ Cloud Computing
+<button onclick="viewNote(event,'ML Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
-<div onclick="subject('Cyber Security')">
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('cyber')">
+
 🔐 Cyber Security
+
+<div class="units" id="cyber">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Cyber Security Basics
+</div>
+
+<button onclick="viewNote(event,'Cyber Security Unit 1')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
 </div>
 
 </div>
 
 </div>
 
+</div>
 
-<!-- SEM 6 -->
+</div>
+
+
+<!-- SEMESTER 6 -->
 
 <div class="card semester">
 
@@ -695,138 +1292,141 @@ View Subjects →
 <h3>🚀 Career & Project</h3>
 
 <p>
-Prepare for projects, internships and your career.
+Projects, interviews and career preparation.
 </p>
 
 <button class="btn primary"
-onclick="toggleSubjects('sem6')">
+onclick="toggle('sem6')">
 View Subjects →
 </button>
 
 <div class="subjects" id="sem6">
 
-<div onclick="subject('Major Project')">
+<div class="subject"
+onclick="toggle('project')">
+
 🚀 Major Project
+
+<div class="units" id="project">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Project Planning
 </div>
 
-<div onclick="subject('Interview Preparation')">
+<button onclick="viewNote(event,'Project Planning')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('interview')">
+
 💼 Interview Preparation
+
+<div class="units" id="interview">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Technical Interview
 </div>
 
-<div onclick="subject('Resume Building')">
+<button onclick="viewNote(event,'Technical Interview')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 2 — HR Interview
+</div>
+
+<button onclick="viewNote(event,'HR Interview')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="subject"
+onclick="toggle('resume')">
+
 📄 Resume Building
+
+<div class="units" id="resume">
+
+<div class="unit">
+
+<div class="unit-name">
+📘 Unit 1 — Resume Basics
 </div>
 
-<div onclick="subject('Career Resources')">
-🎯 Career Resources
+<button onclick="viewNote(event,'Resume Basics')">👁 View</button>
+<button onclick="downloadNote(event)">⬇ Download</button>
+
+</div>
+
 </div>
 
 </div>
 
 </div>
+
+</div>
+
 
 </div>
 
 </section>
 
-
-<!-- NOTES -->
 
 <section id="notes">
 
 <div class="title">
 
-<h2>📄 Notes & Resources</h2>
+<h2>📄 Notes Library</h2>
 
-<p>Our notes library will grow semester by semester.</p>
+<p>
+Real PDFs will be connected in the next step.
+</p>
 
 </div>
 
-<div class="grid" id="notesGrid">
+<div class="grid">
 
-<div class="card note">
-
-<div class="sem">SEM 1</div>
-
+<div class="card">
+<div class="sem">SEMESTER 1</div>
 <h3>💻 C Programming</h3>
-
-<p>
-Programming basics, variables, loops,
-functions and arrays.
-</p>
-
-<div class="note-actions">
-
-<button onclick="message('C Programming PDF will be added soon 📄')">
-👁 View
-</button>
-
-<button onclick="message('Download system coming soon 📥')">
-⬇ Download
-</button>
-
+<p>Unit-wise C programming notes and PDFs.</p>
 </div>
 
-</div>
-
-
-<div class="card note">
-
-<div class="sem">SEM 1</div>
-
-<h3>🖥️ Computer Fundamentals</h3>
-
-<p>
-Basic computer concepts, hardware,
-software and operating systems.
-</p>
-
-<div class="note-actions">
-
-<button onclick="message('PDF viewer coming soon 📄')">
-👁 View
-</button>
-
-<button onclick="message('PDF download coming soon 📥')">
-⬇ Download
-</button>
-
-</div>
-
-</div>
-
-
-<div class="card note">
-
-<div class="sem">SEM 2</div>
-
+<div class="card">
+<div class="sem">SEMESTER 2</div>
 <h3>🗄️ DBMS</h3>
-
-<p>
-Database concepts, SQL, normalization
-and database design.
-</p>
-
-<div class="note-actions">
-
-<button onclick="message('DBMS PDF coming soon 📄')">
-👁 View
-</button>
-
-<button onclick="message('DBMS download coming soon 📥')">
-⬇ Download
-</button>
-
+<p>Database concepts, SQL and important questions.</p>
 </div>
 
+<div class="card">
+<div class="sem">SEMESTER 3</div>
+<h3>☕ Java</h3>
+<p>Java programming and OOP resources.</p>
 </div>
 
 </div>
 
 </section>
 
-
-<!-- REMINDER -->
 
 <section id="reminder">
 
@@ -834,7 +1434,9 @@ and database design.
 
 <h2>⏰ Study Reminder</h2>
 
-<p>Save your study reminder on this device.</p>
+<p>
+Save your study reminder on this device.
+</p>
 
 </div>
 
@@ -857,39 +1459,8 @@ and database design.
 
 <button class="btn primary"
 onclick="saveReminder()">
+
 ⏰ Save Reminder
-</button>
-
-</div>
-
-</section>
-
-
-<!-- SHARE NOTES -->
-
-<section>
-
-<div class="title">
-
-<h2>📤 Share Your Notes</h2>
-
-<p>Help other BCA students by sharing useful resources.</p>
-
-</div>
-
-<div class="form">
-
-<input placeholder="Your Name">
-
-<input placeholder="Semester">
-
-<input placeholder="Subject">
-
-<textarea placeholder="Tell us about your notes..."></textarea>
-
-<button class="btn primary"
-onclick="message('Thank you! Your note submission has been recorded as a demo. 📚')">
-📤 Submit
 
 </button>
 
@@ -897,8 +1468,6 @@ onclick="message('Thank you! Your note submission has been recorded as a demo. �
 
 </section>
 
-
-<!-- CONTACT -->
 
 <section id="contact">
 
@@ -912,24 +1481,23 @@ onclick="message('Thank you! Your note submission has been recorded as a demo. �
 
 <p>
 Have a question, suggestion or want to share
-something useful with BCA HUB? Contact us.
-Our real-time chat system will be added in
-a future version.
+useful notes? BCA HUB will soon have a
+real-time student chat system.
 </p>
 
 <br>
 
 <button class="btn primary"
-onclick="message('Chat system is coming soon! 💬')">
+onclick="message('Chat system coming soon! 💬')">
+
 💬 Start Chat
+
 </button>
 
 </div>
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -955,107 +1523,118 @@ Notes • PDFs • Practicals • Projects • Career
 
 <script>
 
-function toggleSubjects(id){
+function toggle(id){
 
-    const box = document.getElementById(id);
+const box=document.getElementById(id);
 
-    box.classList.toggle("show");
-
-}
-
-
-function subject(name){
-
-    message(
-        name +
-        " selected 📚 — Notes & PDFs will be connected here next!"
-    );
+box.classList.toggle("show");
 
 }
 
 
 function message(text){
 
-    const toast =
-        document.getElementById("toast");
+const toast=document.getElementById("toast");
 
-    toast.innerText = text;
+toast.innerText=text;
 
-    toast.classList.add("show");
+toast.classList.add("show");
 
-    setTimeout(function(){
+setTimeout(function(){
 
-        toast.classList.remove("show");
+toast.classList.remove("show");
 
-    },3000);
+},3000);
+
+}
+
+
+function viewNote(event,name){
+
+event.stopPropagation();
+
+message(
+name+" PDF will be connected in the next step 📄"
+);
+
+}
+
+
+function downloadNote(event){
+
+event.stopPropagation();
+
+message(
+"PDF download system will be connected next 📥"
+);
 
 }
 
 
 function searchNotes(){
 
-    const query =
-        document
-        .getElementById("search")
-        .value
-        .toLowerCase();
+const query=
+document.getElementById("search")
+.value
+.toLowerCase();
 
-    const notes =
-        document.querySelectorAll(".note");
+document
+.querySelectorAll(".semester")
+.forEach(function(card){
 
-    notes.forEach(function(note){
+const text=
+card.innerText.toLowerCase();
 
-        const text =
-            note.innerText.toLowerCase();
+card.style.display=
+text.includes(query)
+?"block"
+:"none";
 
-        if(text.includes(query)){
-
-            note.style.display="block";
-
-        }else{
-
-            note.style.display="none";
-
-        }
-
-    });
+});
 
 }
 
 
 function saveReminder(){
 
-    const subject =
-        document.getElementById("rsubject").value;
+const subject=
+document.getElementById("rsubject").value;
 
-    const date =
-        document.getElementById("rdate").value;
+const date=
+document.getElementById("rdate").value;
 
-    const time =
-        document.getElementById("rtime").value;
+const time=
+document.getElementById("rtime").value;
 
-    const type =
-        document.getElementById("rtype").value;
+const type=
+document.getElementById("rtype").value;
 
-    if(!subject || !date || !time){
 
-        message("Please fill Subject, Date and Time.");
+if(!subject || !date || !time){
 
-        return;
+message(
+"Please fill Subject, Date and Time."
+);
 
-    }
+return;
 
-    localStorage.setItem(
-        "bcaReminder",
-        JSON.stringify({
-            subject:subject,
-            date:date,
-            time:time,
-            type:type
-        })
-    );
+}
 
-    message("Reminder saved successfully! ⏰");
+
+localStorage.setItem(
+"bcaReminder",
+JSON.stringify({
+subject:subject,
+date:date,
+time:time,
+type:type
+})
+);
+
+
+message(
+"Reminder saved successfully! ⏰"
+);
 
 }
 
