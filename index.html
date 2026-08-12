@@ -1551,26 +1551,32 @@ toast.classList.remove("show");
 
 function viewNote(event,name){
 
-event.stopPropagation();
+    event.stopPropagation();
 
-message(
-name+" PDF will be connected in the next step 📄"
-);
+    window.open(
+        "BCA_C_Programming_Complete_Color_Notes.pdf",
+        "_blank"
+    );
 
 }
-
 
 function downloadNote(event){
 
-event.stopPropagation();
+    event.stopPropagation();
 
-message(
-"PDF download system will be connected next 📥"
-);
+    const link = document.createElement("a");
+
+    link.href = "BCA_C_Programming_Complete_Color_Notes.pdf";
+
+    link.download = "BCA_C_Programming_Complete_Color_Notes.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
 
 }
-
-
 function searchNotes(){
 
 const query=
