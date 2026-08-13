@@ -1547,29 +1547,59 @@ toast.classList.remove("show");
 }
 
 
+const pdfLinks = {
+
+    "Business_Communication_Unit_1_Exam_Ready_Highlighted.pdf":
+    "https://igpcogbhxvgiuiieraqh.supabase.co/storage/v1/object/public/student-notes/Business_Communication_Unit_1_Exam_Ready_Highlighted.pdf",
+
+    "Business_Communication_Unit_2_Written_English_Communication_Exam_Ready_Highlighted.pdf":
+    "https://igpcogbhxvgiuiieraqh.supabase.co/storage/v1/object/public/student-notes/Business_Communication_Unit_2_Written_English_Communication_Exam_Ready_Highlighted.pdf"
+
+};
+
 function viewNote(event, file){
 
     event.stopPropagation();
 
-    window.open(file, "_blank");
+    const pdfURL = pdfLinks[file];
+
+    if(pdfURL){
+
+        window.open(pdfURL, "_blank");
+
+    }else{
+
+        alert("PDF not found!");
+
+    }
 
 }
-
 function downloadNote(event, file){
 
     event.stopPropagation();
 
-    const link = document.createElement("a");
+    const pdfURL = pdfLinks[file];
 
-    link.href = file;
+    if(pdfURL){
 
-    link.download = file;
+        const link = document.createElement("a");
 
-    document.body.appendChild(link);
+        link.href = pdfURL;
 
-    link.click();
+        link.download = file;
 
-    document.body.removeChild(link);
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+
+    }else{
+
+        alert("PDF not found!");
+
+    }
+
 }
 function searchNotes(){
 
