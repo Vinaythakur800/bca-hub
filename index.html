@@ -1520,7 +1520,37 @@ Notes • PDFs • Practicals • Projects • Career
 
 
 <script>
+const SUPABASE_URL = "https://igpcogbhxvgiuiieraqh.supabase.co";
+const SUPABASE_KEY = "sb_publishable_LeEOUPIhbYdNuEyzrCpQPA_rshAOtKb";
+async function loadNotes(){
 
+    try{
+
+        const response = await fetch(
+            `${SUPABASE_URL}/rest/v1/student_notes?select=*`,
+            {
+                headers:{
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": `Bearer ${SUPABASE_KEY}`
+                }
+            }
+        );
+
+        if(!response.ok){
+            throw new Error("Could not load notes");
+        }
+
+        const notes = await response.json();
+
+        console.log("Supabase Notes:", notes);
+
+    }catch(error){
+
+        console.error("Supabase Error:", error);
+
+    }
+
+}
 function toggle(id){
 
 const box=document.getElementById(id);
@@ -1667,7 +1697,7 @@ message(
 );
 
 }
-
+loadNotes();
 </script>
 
 </body>
