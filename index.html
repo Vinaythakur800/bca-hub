@@ -1337,8 +1337,7 @@ onclick="toggle('interview')">
 </div>
 
 <button onclick="viewNote(event,'Technical Interview')">👁 View</button>
-<button onclick="downloadNote(event)">⬇ Download</button>
-
+<button onclick="downloadNote(event,'C_Programming_Complete_Color_Notes.pdf')">⬇ Download</button>
 </div>
 
 <div class="unit">
@@ -1605,29 +1604,43 @@ function viewNote(event, file){
     }
 
 }
-function downloadNote(event, file){
+async function viewNote(event, file){
 
     event.stopPropagation();
 
-    const pdfURL = pdfLinks[file];
+    try{
 
-    if(pdfURL){
+        const response = await fetch(
+    `${SUPABASE_URL}/rest/v1/student_notes?select=*&file_name=eq.${encodeURIComponent(file)}`,
+    {
+                headers:{
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": `Bearer ${SUPABASE_KEY}`
+                }
+            }
+        );
 
-        const link = document.createElement("a");
+        if(!response.ok){
+            throw new Error("Could not find note");
+        }
 
-        link.href = pdfURL;
+        const notes = await response.json();
 
-        link.download = file;
+        if(notes.length > 0){
 
-        document.body.appendChild(link);
+            window.open(notes[0].file_URL, "_blank");
 
-        link.click();
+        }else{
 
-        document.body.removeChild(link);
+            alert("PDF not found in Supabase!");
 
-    }else{
+        }
 
-        alert("PDF not found!");
+    }catch(error){
+
+        console.error(error);
+
+        alert("Could not load PDF.");
 
     }
 
@@ -1699,6 +1712,54 @@ message(
 
 }
 loadNotes();
+    async function downloadNote(event, file){
+
+    event.stopPropagation();
+
+    try{
+
+        const response = await fetch(
+            `${SUPABASE_URL}/rest/v1/student_notes?select=*&file_name=eq.${encodeURIComponent(file)}`,
+            {
+                headers:{
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": `Bearer ${SUPABASE_KEY}`
+                }
+            }
+        );
+
+        if(!response.ok){
+            throw new Error("Could not find note");
+        }
+
+        const notes = await response.json();
+
+        if(notes.length > 0){
+
+            const link = document.createElement("a");
+
+            link.href = notes[0].file_URL;
+            link.download = notes[0].file_name;
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+        }else{
+
+            alert("PDF not found in Supabase!");
+
+        }
+
+    }catch(error){
+
+        console.error(error);
+
+        alert("Could not download PDF.");
+
+    }
+
+}
 </script>
 
 </body>
