@@ -1542,7 +1542,14 @@ async function loadNotes(){
         const notes = await response.json();
 
         console.log("Supabase Notes:", notes);
-
+        notes.forEach(note => {
+    console.log(
+        "Subject:", note.Subject,
+        "Unit:", note.Unite,
+        "Title:", note.title,
+        "PDF:", note.file_URL
+    );
+});
     }catch(error){
 
         console.error("Supabase Error:", error);
